@@ -1,10 +1,13 @@
 import csv 
 import random as r
 import sys
-
-filename = 'tes.csv'
-
-with open(filename, 'w',newline='') as csvfile:
+import os
+import last_file_name
+# dirname = os.path.dirname(__file__)
+# filename = os.path.join(dirname, './'+last_file_name.name)
+# os.replace(filename,String(sys.argv[1])+".csv")
+# last_file_name.name = String(sys.argv[1])+".csv"
+with open('tes.csv', 'w',newline='') as csvfile:
      csvwriter = csv.writer(csvfile)
      for i in range(int(sys.argv[2])):
         main_array = []
