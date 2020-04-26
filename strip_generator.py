@@ -2,7 +2,7 @@ import csv
 import random as r
 import sys
 
-filename = sys.argv[1]
+filename = 'tes.csv'
 
 with open(filename, 'w',newline='') as csvfile:
      csvwriter = csv.writer(csvfile)
