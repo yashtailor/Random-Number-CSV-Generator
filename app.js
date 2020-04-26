@@ -29,8 +29,9 @@ app.post('/download', function(req, res){
     var end = req.body.ending;
     var copies = req.body.number_cps;
     var spawn = require("child_process").spawn; 
+    console.log(name,rows,cols,start,end,copies)
     var process = spawn('python',["./strip_generator.py", name+'.csv',copies,rows,cols,start,end] );
     const file = `${__dirname}/tes.csv`;
-    setTimeout((function(){res.download(file);}),5000);
+    setTimeout((function(){res.download(file,name+'.csv');}),5000);
     //res.redirect('/')
 })
