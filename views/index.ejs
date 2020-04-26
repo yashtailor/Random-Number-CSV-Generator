@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@577&display=swap" rel="stylesheet"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body{
+        text-align: center;
+        background: #076585;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fff, #076585);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fff, #076585);
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+    }
+    input{
+        padding: 3px;
+        margin: 10px;
+        width: 400px;
+    }
+</style>
+</head>
+<body>
+    <form action="/download" method="POST">
+        <input type="text" name="filename" placeholder="file name"><br>
+        <input type="number" name="number_cps" placeholder="number of copies"><br>
+        <input type="number" name="rows" placeholder="rows"><br>
+        <input type="number" name="cols" placeholder="cols"><br>
+        <input type="number" name="starting" placeholder="starting number"><br>
+        <input type="number" name="ending" placeholder="ending number"><br>
+        <button class="btn btn-danger">Download</button>
+    </form>
+</body>
+</html>
